@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 app = Flask(__name__)
 #store assignments data
-assignments_data = []
+assignments_data = {}
 
 @app.route('/assignments', methods=['POST'])
 def add_assignment():

@@ -25,14 +25,38 @@ def login_canvas():
             page.wait_for_selector("#username", timeout=15000)
             print("loading...")
             
-            # FILL USERNAME AND PASSWORD
-            page.fill("#username", username)
-            page.fill("#password", password)
-            page.click("text=LOG IN")
+            page.wait_for_url("https://login.microsoftonline.com/*", timeout = 20000)
+            page.wait_for_selector("input[type = 'email']", timeout = 15000)
             
-            page.wait_for_load_state('networkidle')
+            page.fill("input[type = 'email']", username)
+            page.click("text = NEXT")
+            print("Moving to password")
             
-            print("✅ logged in successfully", page.title)
+            page.wait_for_selector("input[type = 'password']", timeout = 15000)
+            
+            page.fill("input[type='password']", password)
+            page.click("input[type='submit']")
+            print("Logging in...")
+            
+            # Handle Microsoft 2FA/second login step
+            page.wait_for_url("https://login.microsoftonline.com/*", timeout=20000)
+            
+            # Check if we need to verify the account
+            if page.locator("text=Verify your identity").is_visible():
+                print("Additional verification required...")
+                
+                # Click "Sign in with Microsoft Authenticator" if present
+                if page.locator("text=Sign in with Microsoft Authenticator").is_visible():
+                    page.click("text=Sign in with Microsoft Authenticator")
+                
+                print("Please approve the login request on your Microsoft Authenticator app")
+                input("Press Enter after you've approved the request...")
+            
+            # Wait for successful login and redirect to Canvas
+            page.wait_for_url("*canvas*", timeout=60000)
+            page.wait_for_load_state("domcontentloaded")
+            
+            print("Logged in successfully, current page is", page.title)
             
         except Exception as e:
             print(f"❌ Error occurred: {str(e)}")
