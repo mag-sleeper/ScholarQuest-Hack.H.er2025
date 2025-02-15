@@ -1,0 +1,73 @@
+{
+    "general_education": {
+        "writing": ["ENGLWRIT112", "Junior Year Writing"],
+        "math": ["R1", "R2"],
+        "science":["BS-Bioligical Science", "PS-Physical Science"],
+        "social_world":{
+        "literature_arts": ["AL-Literature", "AT-Theatre"],
+        "historical_studies": ["HS - Historical Studies"],
+        "social_behavioral": ["SB - Social and Behavioral Sciences"],
+        "additional": ["AL/AT/SB or Interdisciplinary (I or SI)"]
+        },
+        "diversity": {
+            "us_diversity": ["DU - Diversity in the US"],
+            "global_diversity": ["DG - Global Diversity"],
+            "dual_category": {
+        "courses": {
+            "HISTORY115": ["DU", "DG"],
+            "AFROAM117": ["AL", "DU"]
+            },
+            "rules": " If a course appears in two categories, you must choose only one."
+
+            }
+        },
+    "integrative_experence": ["3 credits (Major Specific)"]
+    },
+    "cs_major":{
+    "core_courses": [
+        "CICS 110",
+        "CICS 160",
+        "CICS 210",
+        "CICS 220",
+        "CICS 230",
+        "CICS 311",
+        "CICS 305"
+    ],
+    "electives":["CS 300+", "CS 400+", "CS 500+"],
+    "prerequisites":{
+        "CICS 160": ["CICS 110"],
+        "CICS 210": ["CICS 160"],
+        "COMPSCI 198c": ["CICS 160"],
+        "CICS 220":["CICS 210"],
+        "CICS 230":["CICS 210","COMPSCI 198c"],
+        "CICS 240":["CICS 160","Math 132"],
+        "CICS 250":["CICS 160","Math 132"],
+        "Math 132":["Math 131"],
+        "Math 233":["Math 132"],
+        "Math 235":["Math 132"]
+    },
+    "overrides": {
+        "CICS160": ["CICS110"],
+        "CS220": ["CICS160"],
+        "CS230": ["CICS160"]
+    },
+    "informatics_major": {
+    "core": [
+        "INFO 101",
+        "CICS 110 ",
+        "CICS 160 ",
+        "CICS 210 ",
+        "INFO 248 ",
+        "CS 325",
+        "STATS 240 "
+    ],
+    "electives": ["6 Informatics Electives"],
+    "prerequisites": {
+        "CS326": ["CS220", "CS230"],
+        "INFO490PI": ["CICS210", "INFO248"]
+        }
+    },
+    "completed_courses":[]
+    }
+}
+    
