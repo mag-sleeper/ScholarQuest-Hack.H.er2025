@@ -15,8 +15,7 @@ def get_assignment():
     elif request.method == 'GET':
         assignment_data = {
             "title": assignments_data.get("title"),
-            "due_date": assignments_data.get("due_date"),
-            "assignment description": assignments_data.get("assignment description") 
+            "due_date": assignments_data.get("due_date")
         }
         print("📌 DEBUG: assignments_data =", assignments_data)
         return jsonify(assignment_data)
