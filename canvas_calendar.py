@@ -17,8 +17,8 @@ def fetch_calendar_events():
     
     for event in calendar.events:
         event_data = {
-            "title": event.name,
-            "due_date": event.begin.format("YYYY-MM-DD")
+            "Title": event.name,
+            "Due_Date": event.begin.format("YYYY-MM-DD")
         }
         events.append(event_data)
     return events
