@@ -17,7 +17,7 @@ def check_gen_ed_requirements(req, completed_cor, current_cor, remaining_cor):
         
         result[category] = completed_courses
         
-        for catrgory in req["general_education"]:
+        for category in req["general_education"]:
             if category not in result:
                 result[category] = []
 
@@ -29,13 +29,14 @@ def remaining_gen_ed():
     completed_cor = data.get('completed_courses', [])
     current_cor = data.get('current_semester_courses', [])
     
-    result = check_gen_ed_requirements(graduation_requirements, completed_cor, current_cor)
+    result = check_gen_ed_requirements(graduation_requirements, completed_cor, current_cor, [])
     
     response = {
         "message": "Here's the list of your Gen Ed categories and the courses you've completed or are currently taking:",
         "result": result
     }
-    
+    return jsonify(response)
+
 assignments_data = {}
 
 @app.route('/assignments', methods=['GET','POST'])
@@ -55,5 +56,4 @@ def get_assignment():
     
 if __name__ == '__main__':
     app.run(debug=True)
-
 
