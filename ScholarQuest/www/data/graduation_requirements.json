@@ -76,7 +76,10 @@
             "INFO490PI": ["CICS210", "INFO248"]
         }
     },
-    "completed_courses": [],
+    "completed_courses": [
+        "ENGLWRIT112",
+        "LINGUIST101"
+    ],
     "current_semester_courses": [
         "CHEM111",
         "MICROBIO 140P"
