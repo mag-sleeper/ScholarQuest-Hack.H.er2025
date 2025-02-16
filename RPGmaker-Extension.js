@@ -13,12 +13,10 @@
 (function() {
     const API_URL = "http://127.0.0.1:5000"; // Flask server URL
 
-    // 定义插件命令
     PluginManager.registerCommand('RPGAdvisor', 'ShowAdvisorDialogue', async function() {
         console.log("ShowAdvisorDialogue command triggered");
 
         const playerChoice = await new Promise((resolve) => {
-            // 使用 RPG Maker MV 提示玩家选择
             const choice = confirm("Would you like to check:\n1. Remaining Courses\n2. Gen Ed Progress");
             resolve(choice ? "1" : "2");
         });
@@ -37,7 +35,6 @@
         }
     });
 
-    // 显示剩余课程
     async function showRemainingCourses() {
         console.log("Fetching remaining courses...");
         
@@ -52,7 +49,6 @@
         $gameMessage.add(message);
     }
 
-    // 显示 Gen Ed 进度
     async function showGenEdProgress() {
         console.log("Fetching Gen Ed progress...");
         
