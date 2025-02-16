@@ -1,7 +1,7 @@
-# Hack(H)er413
+# Hack(H)er413💻
 Hack(H)er413 2025 Project
 
-# 🎓 ScholarQuest - An RPG-Based Academic Progress Tracker 
+# 👾 ScholarQuest - An RPG-Based Academic Progress Tracker 
 
 **ScholarQuest** is an **RPG-based academic planner** built with **RPG Maker**.  
 It helps students track:
