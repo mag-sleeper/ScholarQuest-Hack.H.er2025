@@ -1,87 +1,94 @@
 {
     "general_education": {
-        "writing": {
+        "Writing": {
             "courses": ["ENGLWRIT112", "Junior Year Writing"]
         },
-        "math": {
-            "courses": ["R1 - Basic Math", "R2 - Analytical Reasoning"]
+        "AL": {
+            "courses": [
+                "AFROAM 117", "AFROAM 118", "AFROAM 151", "AFROAM 234", "AFROAM 345",
+                "ASIAN-ST 375", "ASIAN-ST 380", "CLASSICS 224", "CLASSICS 263", "COMP-LIT 100",
+                "COMP-LIT 121", "COMP-LIT 122", "COMP-LIT 130", "COMP-LIT 134", "COMP-LIT 135",
+                "COMP-LIT 141", "COMP-LIT 141H", "COMP-LIT 231", "COMP-LIT 233", "COMP-LIT 340",
+                "ENGLISH 115", "ENGLISH 117", "ENGLISH 131", "ENGLISH 132", "ENGLISH 141",
+                "ENGLISH 190N", "ENGLISH 221"
+            ]
         },
-        "science": {
-            "courses": ["BS - Biological Science", "PS - Physical Science"]
+        "AT": {
+            "courses": [
+                "AFROAM 156", "ART 105", "ART-HIST 110H", "ART-HIST 115", "CLASSICS 103",
+                "COMP-LIT 382", "FILM-ST 284", "FILM-ST 353", "FILM-ST 373", "FRENCHST 284",
+                "FRENCHST 353", "GERMAN 373", "HONORS 221H", "JOURNAL 333", "MUSIC 100",
+                "MUSIC 101", "MUSIC 102", "MUSIC 150", "PHIL 163", "THEATER 100"
+            ]
         },
-        "social_world": {
-            "literature_arts": {
-                "courses": ["AL - Literature", "AT - Theatre", "ART - Design"]
-            },
-            "historical_studies": {
-                "courses": ["HS - Historical Studies"]
-            },
-            "social_behavioral": {
-                "courses": ["SB - Social and Behavioral Sciences"]
-            },
-            "additional_social_world": {
-                "courses": ["AL/AT/SB or Interdisciplinary (I or SI)"]
-            },
-            "diversity": {
-                "us_diversity": ["DU - Diversity in the US"],
-                "global_diversity": ["DG - Global Diversity"]
-            }
+        "BS": {
+            "courses": [
+                "ANTHRO 103", "BIOLOGY 105H", "BIOLOGY 110", "BIOLOGY 151", "FOOD-SCI 150",
+                "KIN 100", "KIN 110", "KIN 110H", "MICROBIO 140P", "MICROBIO 160", "NRC 126",
+                "NUTRITN 130", "NUTRITN 130H", "STOCKSCH 105", "STOCKSCH 120", "STOCKSCH 171",
+                "STOCKSCH 370"
+            ]
         },
-        "integrative_experience": {
-            "courses": ["3 credits (Major Specific)"]
-        }
-    },
-    "cs_major": {
-        "core_courses": [
-            "CICS 110",
-            "CICS 160",
-            "CICS 210",
-            "CICS 220",
-            "CICS 230",
-            "CICS 311",
-            "CICS 305"
-        ],
-        "electives": ["CS 300+", "CS 400+", "CS 500+"],
-        "prerequisites": {
-            "CICS 160": ["CICS 110"],
-            "CICS 210": ["CICS 160"],
-            "COMPSCI 198c": ["CICS 160"],
-            "CICS 220": ["CICS 210"],
-            "CICS 230": ["CICS 210","COMPSCI 198c"],
-            "CICS 240": ["CICS 160","Math 132"],
-            "CICS 250": ["CICS 160","Math 132"],
-            "Math 132": ["Math 131"],
-            "Math 233": ["Math 132"],
-            "Math 235": ["Math 132"]
+        "PS": {
+            "courses": [
+                "ASTRON 100H", "ASTRON 101", "CHEM 111", "CHEM 112", "CHEM 122H", "FOOD-SCI 120",
+                "GEOGRAPH 110", "GEOLOGY 101", "GEOLOGY 103", "GEOLOGY 103H", "GEOLOGY 105",
+                "PHYSICS 100", "PHYSICS 115", "PHYSICS 120", "PHYSICS 125", "PHYSICS 131",
+                "PHYSICS 132", "PHYSICS 151", "PHYSICS 152", "PHYSICS 182"
+            ]
         },
-        "overrides": {
-            "CICS160": ["CICS110"],
-            "CS220": ["CICS160"],
-            "CS230": ["CICS160"]
-        }
-    },
-    "informatics_major": {
-        "core": [
-            "INFO 101",
-            "CICS 110",
-            "CICS 160",
-            "CICS 210",
-            "INFO 248",
-            "CS 325",
-            "STATS 240"
-        ],
-        "electives": ["6 Informatics Electives"],
-        "prerequisites": {
-            "CS326": ["CS220", "CS230"],
-            "INFO490PI": ["CICS210", "INFO248"]
+        "R1": {
+            "courses": [
+                "MATH 100", "MATH 101", "MATH 102", "MATH 104"
+            ]
+        },
+        "R2": {
+            "courses": [
+                "ANTHRO 281", "CICS 110", "CICS 160", "CICS 210", "EDUC 240", "LINGUIST 201",
+                "MATH 113", "MATH 121", "MATH 127", "MATH 128", "MATH 131", "MATH 132", "MATH 233",
+                "MATH 235", "MUSIC 110", "NRC 240", "PHIL 105", "PHIL 110", "PSYCH 240", "RES-ECON 212",
+                "SOCIOL 212", "STATISTC 111", "STATISTC 240", "STATISTC 501"
+            ]
+        },
+        "SB": {
+            "courses": [
+                "AFROAM 161", "ANTHRO 101", "ANTHRO 102", "ANTHRO 104", "ANTHRO 105", "ANTHRO 208",
+                "ANTHRO 210", "ANTHRO 225", "COMM 245", "COMM 248", "COMM 271", "COMM 284", "COMM 360",
+                "ECON 103", "ECON 104", "ECON 105", "EDUC 101", "EDUC 167", "EDUC 190D", "EDUC 229",
+                "ENGLISH 150", "FILM-ST 360", "GEOGRAPH 102", "GEOGRAPH 220", "HONORS 252H", "HONORS 321H",
+                "HONORS 322H", "HUMANDEV 270", "JOURNAL 201", "JOURNAL 250", "JOURNAL 310", "LABOR 201",
+                "LEGAL 250", "LINGUIST 101", "LLC 125", "MIDEAST 151", "PHIL 160", "PHIL 160H", "PHIL 164",
+                "PHIL 164H", "PHIL 170", "PHIL 175", "PHIL 180", "POLISCI 121", "POLISCI 171", "POLISCI 255",
+                "POLISCI 276", "POLISCI 280", "POLISCI 281", "PORTUG 357", "PSYCH 100", "PSYCH 209H",
+                "PUBHLTH 129", "PUBHLTH 389", "PUBHLTH 389H", "RES-ECON 102", "RES-ECON 106", "RES-ECON 107",
+                "RES-ECON 262", "SLHS 100", "SOCIOL 103", "SOCIOL 106", "SOCIOL 107", "SOCIOL 110", "SOCIOL 201",
+                "SOCIOL 222", "SOCIOL 224", "SOCIOL 240", "SOCIOL 242", "SOCIOL 244", "SOCIOL 262", "SOCIOL 287",
+                "SOCIOL 290S", "SOCIOL 321", "SPANISH 471", "SPHHS 150", "SPP 105", "SPP 111", "SPP 151", "SPP 203",
+                "SPP 280", "SPP 290S", "SRVCLRNG 293", "SUSTCOMM 125", "SUSTCOMM 333", "WGSS 220"
+            ]
+        },
+        "DU": {
+            "courses": [
+                "AFROAM 101", "AFROAM 117", "AFROAM 118", "AFROAM 133", "AFROAM 151", "AFROAM 156", "AFROAM 161",
+                "AFROAM 170", "AFROAM 234", "AFROAM 236", "AFROAM 264", "AFROAM 326", "AFROAM 345", "ANTHRO 225",
+                "ANTHRO 269", "COMM 360", "COMP-LIT 135", "ECON 105", "EDUC 115", "EDUC 167", "EDUC 210", "ENGLISH 115",
+                "ENGLISH 117", "ENGLISH 150", "ENGLISH 279", "ENGLWRIT 111", "FILM-ST 284", "FILM-ST 360", "FRENCHST 284",
+                "FRENCHST 353", "HISTORY 202", "HISTORY 242H", "HONORS 201H", "HONORS 321H", "JOURNAL 201", "JOURNAL 250",
+                "LEGAL 250", "LINGUIST 101", "MUSIC 102", "PHIL 160", "PHIL 160H", "PHIL 164", "PHIL 164H", "PORTUG 357",
+                "PUBHLTH 129", "PUBHLTH 389", "PUBHLTH 389H", "SOCIOL 103", "SOCIOL 106", "SOCIOL 107", "SOCIOL 110",
+                "SOCIOL 222", "SOCIOL 224", "SOCIOL 240", "SOCIOL 262", "SPANISH 324", "SPANISH 471"
+            ]
         }
     },
     "completed_courses": [
-        "ENGLWRIT112",
-        "LINGUIST101"
+        "CICS 110",
+        "CICS 160",
+        "ENGLWRIT 112",
+        "LINGUIST 101"
     ],
     "current_semester_courses": [
-        "CHEM111",
+        "CICS 210",
+        "CHEM 111",
         "MICROBIO 140P"
     ]
 }
