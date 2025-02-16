@@ -21,10 +21,10 @@ Welcome to ScholarQuest! 🏫✨ This is an interactive project designed to help
 ## Technologies Used 🛠️
 - **RPG Maker**: A game engine used to build an interactive campus map that allows students to explore and engage with their academic progress in a game-like format. 🎮
 - **VSCode**: The preferred code editor for development. 🖥️
-- - **Python**: The main programming language for backend logic, including data extraction and server-side processing. 🐍
+- **Python**: The main programming language for backend logic, including data extraction and server-side processing. 🐍
 - **JavaScript**: Used for frontend development, handling dynamic interactions and campus map updates. 💻
 - **JSON**: The format used for exchanging and managing course data between the backend and frontend. 📊
-- - **Playwright**: A tool used for web scraping to fetch GenEd and CS course data (initially), later replaced by ICS file integration. 🕵️‍♂️
+- **Playwright**: A tool used for web scraping to fetch GenEd and CS course data (initially), later replaced by ICS file integration. 🕵️‍♂️
 - **Zsh & iTerm2**: Tools for managing shell and terminal environments efficiently. ⌨️ 
 
 ## Project Status ⚡
