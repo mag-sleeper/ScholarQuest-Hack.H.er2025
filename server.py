@@ -45,14 +45,7 @@ def get_assignment():
         }
         print("📌 DEBUG: assignments_data =", assignments_data)
         return jsonify(assignment_data)
-
-def remaining_gen_ed(requirements, completed_courses, current_courses, remaining_courses):
-    remaining_courses = {}
-    all_course = completed_courses + current_courses
-    for category
-
-
-
+    
 if __name__ == '__main__':
     app.run(debug=True)
 
